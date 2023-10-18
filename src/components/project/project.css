@@ -1,0 +1,27 @@
+
+
+.Box__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    
+    
+  }
+  
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .Box__container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .Box__container {
+        flex-wrap: wrap;
+    }
+}

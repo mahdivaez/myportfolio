@@ -1,0 +1,123 @@
+
+
+.skills__container{
+  display: flex;
+}
+
+.skills__content {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2rem 4rem;
+  border-radius: 1.25rem;
+  /* width: 100%; (Remove this line) */
+  /* max-width: 700px; (Remove this line) */
+  margin: 0 auto; /* To center align the container */
+}
+
+.skills__box {
+  display: flex;
+  justify-content: center;
+  column-gap: var(--mb-1-5);
+}
+
+.skills__group {
+  display: grid;
+  align-items: flex-start;
+  row-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+}
+
+.skills__data {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.skills__data i {
+  margin-right: 1rem;
+}
+
+.skills__name {
+  font-size: var(--normal-font-size);
+  margin-bottom: 0.5rem;
+}
+
+.skills__level {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.skills__title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  text-align: center;
+  margin-bottom: var(--mb-1-5);
+}
+
+
+
+.skills .fa-solid  {
+  font-size: 1rem;
+  align-self: flex-start; /* Add this line */
+  color: var(--title-color);
+
+}
+
+.skills__name{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  line-height: 18px;
+}
+
+.skills__level{
+  font-size: var(--tiny-font-size);
+  margin-bottom: 50px;
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .skills__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skills__box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .skills__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skills__box {
+    width: 100%;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .skills__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills__box {
+    width: 100%;
+  }
+}
